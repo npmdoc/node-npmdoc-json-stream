@@ -1,0 +1,467 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/mmalecki/json-stream">json-stream (v1.0.0)</a>
+</h1>
+<h4>New line-delimeted JSON parser with a stream interface</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.json-stream">module json-stream</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.json-stream.json-stream">
+            function <span class="apidocSignatureSpan"></span>json-stream
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.json-stream.JSONStream">
+            function <span class="apidocSignatureSpan">json-stream.</span>JSONStream
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.json-stream.JSONStream.prototype._transform">
+            function <span class="apidocSignatureSpan">json-stream.</span>JSONStream.prototype._transform
+            <span class="apidocSignatureSpan">(data, encoding, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.json-stream.json_stream">
+            function <span class="apidocSignatureSpan">json-stream.</span>json_stream
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.json-stream.toString">
+            function <span class="apidocSignatureSpan">json-stream.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">json-stream.</span>JSONStream.prototype</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.json-stream.JSONStream">module json-stream.JSONStream</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.json-stream.JSONStream.JSONStream">
+            function <span class="apidocSignatureSpan">json-stream.</span>JSONStream
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.json-stream.JSONStream.super_">
+            function <span class="apidocSignatureSpan">json-stream.JSONStream.</span>super_
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.json-stream.JSONStream.prototype">module json-stream.JSONStream.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.json-stream.JSONStream.prototype._transform">
+            function <span class="apidocSignatureSpan">json-stream.JSONStream.prototype.</span>_transform
+            <span class="apidocSignatureSpan">(data, encoding, callback)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.json-stream.JSONStream.prototype._transform">module json-stream.JSONStream.prototype._transform</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.json-stream.JSONStream.prototype._transform._transform">
+            function <span class="apidocSignatureSpan">json-stream.JSONStream.prototype.</span>_transform
+            <span class="apidocSignatureSpan">(data, encoding, callback)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.json-stream.toString">module json-stream.toString</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.json-stream.toString.toString">
+            function <span class="apidocSignatureSpan">json-stream.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.json-stream" id="apidoc.module.json-stream">module json-stream</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.json-stream.json-stream" id="apidoc.element.json-stream.json-stream">
+        function <span class="apidocSignatureSpan"></span>json-stream
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">json-stream = function (options) {
+  return new JSONStream(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.json-stream.JSONStream" id="apidoc.element.json-stream.JSONStream">
+        function <span class="apidocSignatureSpan">json-stream.</span>JSONStream
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">JSONStream = function (options) {
+  options = options || {};
+  TransformStream.call(this, options);
+  this._writableState.objectMode = false;
+  this._readableState.objectMode = true;
+  this._async = options.async || false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.json-stream.JSONStream.prototype._transform" id="apidoc.element.json-stream.JSONStream.prototype._transform">
+        function <span class="apidocSignatureSpan">json-stream.</span>JSONStream.prototype._transform
+        <span class="apidocSignatureSpan">(data, encoding, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">JSONStream.prototype._transform = function (data, encoding, callback) {
+  if (!Buffer.isBuffer(data)) data = new Buffer(data);
+  if (this._buffer) {
+    data = Buffer.concat([this._buffer, data]);
+  }
+
+  var ptr = 0, start = 0;
+  while (++ptr &lt;= data.length) {
+    if (data[ptr] === 10 || ptr === data.length) {
+      var line;
+      try {
+        line = JSON.parse(data.slice(start, ptr));
+      }
+      catch (ex) { }
+      if (line) {
+        this.push(line);
+        line = null;
+      }
+      if (data[ptr] === 10) start = ++ptr;
+    }
+  }
+
+  this._buffer = data.slice(start);
+  return this._async
+    ? void setImmediate(callback)
+    : void callback();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.json-stream.json_stream" id="apidoc.element.json-stream.json_stream">
+        function <span class="apidocSignatureSpan">json-stream.</span>json_stream
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">json_stream = function (options) {
+  return new JSONStream(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.json-stream.toString" id="apidoc.element.json-stream.toString">
+        function <span class="apidocSignatureSpan">json-stream.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toString = function () {
+    return text;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.json-stream.JSONStream" id="apidoc.module.json-stream.JSONStream">module json-stream.JSONStream</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.json-stream.JSONStream.JSONStream" id="apidoc.element.json-stream.JSONStream.JSONStream">
+        function <span class="apidocSignatureSpan">json-stream.</span>JSONStream
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">JSONStream = function (options) {
+  options = options || {};
+  TransformStream.call(this, options);
+  this._writableState.objectMode = false;
+  this._readableState.objectMode = true;
+  this._async = options.async || false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.json-stream.JSONStream.super_" id="apidoc.element.json-stream.JSONStream.super_">
+        function <span class="apidocSignatureSpan">json-stream.JSONStream.</span>super_
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Transform(options) {
+  if (!(this instanceof Transform))
+    return new Transform(options);
+
+  Duplex.call(this, options);
+
+  this._transformState = new TransformState(this);
+
+  var stream = this;
+
+  // start out asking for a readable event once data is transformed.
+  this._readableState.needReadable = true;
+
+  // we have implemented the _read method, and done the other things
+  // that Readable wants before the first _read call, so unset the
+  // sync guard flag.
+  this._readableState.sync = false;
+
+  if (options) {
+    if (typeof options.transform === 'function')
+      this._transform = options.transform;
+
+    if (typeof options.flush === 'function')
+      this._flush = options.flush;
+  }
+
+  // When the writable side finishes, then flush out anything remaining.
+  this.once('prefinish', function() {
+    if (typeof this._flush === 'function')
+      this._flush(function(er) {
+        done(stream, er);
+      });
+    else
+      done(stream);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.json-stream.JSONStream.prototype" id="apidoc.module.json-stream.JSONStream.prototype">module json-stream.JSONStream.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.json-stream.JSONStream.prototype._transform" id="apidoc.element.json-stream.JSONStream.prototype._transform">
+        function <span class="apidocSignatureSpan">json-stream.JSONStream.prototype.</span>_transform
+        <span class="apidocSignatureSpan">(data, encoding, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_transform = function (data, encoding, callback) {
+  if (!Buffer.isBuffer(data)) data = new Buffer(data);
+  if (this._buffer) {
+    data = Buffer.concat([this._buffer, data]);
+  }
+
+  var ptr = 0, start = 0;
+  while (++ptr &lt;= data.length) {
+    if (data[ptr] === 10 || ptr === data.length) {
+      var line;
+      try {
+        line = JSON.parse(data.slice(start, ptr));
+      }
+      catch (ex) { }
+      if (line) {
+        this.push(line);
+        line = null;
+      }
+      if (data[ptr] === 10) start = ++ptr;
+    }
+  }
+
+  this._buffer = data.slice(start);
+  return this._async
+    ? void setImmediate(callback)
+    : void callback();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.json-stream.JSONStream.prototype._transform" id="apidoc.module.json-stream.JSONStream.prototype._transform">module json-stream.JSONStream.prototype._transform</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.json-stream.JSONStream.prototype._transform._transform" id="apidoc.element.json-stream.JSONStream.prototype._transform._transform">
+        function <span class="apidocSignatureSpan">json-stream.JSONStream.prototype.</span>_transform
+        <span class="apidocSignatureSpan">(data, encoding, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">_transform = function (data, encoding, callback) {
+  if (!Buffer.isBuffer(data)) data = new Buffer(data);
+  if (this._buffer) {
+    data = Buffer.concat([this._buffer, data]);
+  }
+
+  var ptr = 0, start = 0;
+  while (++ptr &lt;= data.length) {
+    if (data[ptr] === 10 || ptr === data.length) {
+      var line;
+      try {
+        line = JSON.parse(data.slice(start, ptr));
+      }
+      catch (ex) { }
+      if (line) {
+        this.push(line);
+        line = null;
+      }
+      if (data[ptr] === 10) start = ++ptr;
+    }
+  }
+
+  this._buffer = data.slice(start);
+  return this._async
+    ? void setImmediate(callback)
+    : void callback();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.json-stream.toString" id="apidoc.module.json-stream.toString">module json-stream.toString</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.json-stream.toString.toString" id="apidoc.element.json-stream.toString.toString">
+        function <span class="apidocSignatureSpan">json-stream.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toString() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
