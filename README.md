@@ -1,4 +1,7 @@
-# api documentation for  [json-stream (v1.0.0)](https://github.com/mmalecki/json-stream)  [![npm package](https://img.shields.io/npm/v/npmdoc-json-stream.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-json-stream) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-json-stream.svg)](https://travis-ci.org/npmdoc/node-npmdoc-json-stream)
+# npmdoc-json-stream
+
+#### api documentation for  [json-stream (v1.0.0)](https://github.com/mmalecki/json-stream)  [![npm package](https://img.shields.io/npm/v/npmdoc-json-stream.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-json-stream) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-json-stream.svg)](https://travis-ci.org/npmdoc/node-npmdoc-json-stream)
+
 #### New line-delimeted JSON parser with a stream interface
 
 [![NPM](https://nodei.co/npm/json-stream.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/json-stream)
